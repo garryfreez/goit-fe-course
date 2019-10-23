@@ -1,11 +1,11 @@
 @font-face {
     font-family: Playfair;
-    src: url(/fonts/PlayfairDisplay-Regular.ttf);
+    src: url(../fonts/PlayfairDisplay-Regular.ttf);
 }
 
 @font-face {
     font-family: Playfair;
-    src: url(/fonts/Ubuntu-Light.ttf);
+    src: url(../fonts/Ubuntu-Light.ttf);
 }
 
 html {
@@ -13,10 +13,10 @@ html {
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+    display: inline-block;
+    max-width: 419px;
     margin-bottom: 32px;
+    padding: 0;
 }
 
 :active,
@@ -39,7 +39,7 @@ img {
     padding: 0;
 }
 
-.menu-list li {
+li.menu-item {
     list-style: none;
     display: inline-block;
 }
@@ -89,17 +89,18 @@ img {
 
 .content-list li {
     list-style: none;
-    width: 421px;
+    width: 419px;
     margin-right: 59px;
     padding: 0;
     display: inline-block;
+    vertical-align: top;
 }
 
 .content-list li:nth-child(2n) {
     margin-right: 0;
 }
 
-p.foreword {
+.foreword {
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     line-height: 17px;

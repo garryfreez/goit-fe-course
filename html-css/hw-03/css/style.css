@@ -29,24 +29,32 @@ img {
 
 /* header menu */
 
-.wrapper-head {
-    width: 573px;
-    margin: 77px auto 103px;
-}
-
-.menu-list {
-    margin: 0;
-    padding: 0;
-}
-
-li.menu-item {
+li {
     list-style: none;
     display: inline-block;
 }
 
-.menu-list li:not(:last-child) {
-    margin-right: 107px;
+li.menu-item {
+    margin: 0 55px;
 }
+
+.wrapper-head {
+    margin: 77px auto 103px;
+    max-width: 901px;
+}
+
+ul.menu-list {
+    text-align: center;
+}
+
+.menu-list {
+    padding: 0;
+}
+
+
+/* .menu-list li:not(:last-child) {
+    margin-right: 107px;
+} */
 
 .menu-item a:hover {
     color: #fff;
@@ -88,11 +96,9 @@ li.menu-item {
 }
 
 .content-list li {
-    list-style: none;
     width: 419px;
-    margin-right: 59px;
+    margin-right: 63px;
     padding: 0;
-    display: inline-block;
     vertical-align: top;
 }
 

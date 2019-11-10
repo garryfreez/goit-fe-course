@@ -82,16 +82,19 @@ input[type="radio"].visually-hidden {
 }
 
 header img {
-    float: left;
     max-width: 100%;
     padding-top: 3px;
+}
+
+.logo {
+    float: left;
 }
 
 
 }
 .link-nav {
     float: right;
-    width: 1015px;
+    width: 1010px;
 }
 .link-nav ul {
     float: right;

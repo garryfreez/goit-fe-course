@@ -84,6 +84,7 @@ input[type="radio"].visually-hidden {
 header img {
     max-width: 100%;
     padding-top: 3px;
+    display: block;
 }
 
 .logo {

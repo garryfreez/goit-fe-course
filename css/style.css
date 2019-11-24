@@ -1,16 +1,36 @@
 @font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+    font-family: 'Kaushan Script', cursive;
+    src: url(//fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Kaushan Script', cursive;
-    src: url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+    src: url(//fonts/Montserrat-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto', sans-serif;
-    src: url('https://fonts.googleapis.com/css?family=Roboto:300i,400&display=swap');
+    font-family: 'Kaushan Script', cursive;
+    src: url(//fonts/KaushanScript-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kaushan Script', cursive;
+    src: url(//fonts/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kaushan Script', cursive;
+    src: url(//fonts/Roboto-LightItalic.ttf);
+    font-weight: normal;
+    font-style: italic;
 }
 
 html {
@@ -91,15 +111,20 @@ header a:hover {
     color: #f38181;
 }
 
-header a:hover:after {
-    display: block;
+header a:after {
     position: absolute;
-    left: 0;
-    bottom: -12px;
     content: '';
-    width: 50px;
+    background: #f38181;
+    width: 0;
     height: 3px;
-    background-color: #f38181;
+    bottom: -12px;
+    left: 50%;
+    transition: width .5s, left .5s;
+}
+
+header a:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 

@@ -1,16 +1,36 @@
 @font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+    font-family: 'Kaushan Script', cursive;
+    src: url(//fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Kaushan Script', cursive;
-    src: url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+    src: url(//fonts/Montserrat-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto', sans-serif;
-    src: url('https://fonts.googleapis.com/css?family=Roboto:300i,400&display=swap');
+    font-family: 'Kaushan Script', cursive;
+    src: url(//fonts/KaushanScript-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kaushan Script', cursive;
+    src: url(//fonts/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kaushan Script', cursive;
+    src: url(//fonts/Roboto-LightItalic.ttf);
+    font-weight: normal;
+    font-style: italic;
 }
 
 html {

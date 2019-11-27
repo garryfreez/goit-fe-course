@@ -62,24 +62,24 @@
         <h3 class="footer-title">Contact us</h3>
         <p class="footer-description">Proin iaculis purus consequat sem cure.</p>
 
-        <form class="contact-us" method="GET" action="#">
+        <form class="contact-us" method="post" action="#">
 
             <div class="input-text-wrp">
-                <div class="input-wrp">
-                    <input type="text" placeholder="your Name *" name="user-name" minlength="2" required>
+                <div class="contact-input">
+                    <input type="text" placeholder="your Name *" name="name" minlength="2" required>
                     <input type="email" placeholder="your e-mail *" name="user-email" required>
                     <input type="text" placeholder="subject" name="subject" minlength="2">
                 </div>
 
-                <div class="textarea-wrp">
-                    <textarea name="text-message" cols="30" rows="10" placeholder="Your message *" id="" minlength="5" required></textarea>
+                <div class="contact-textarea">
+                    <textarea name="body" cols="30" rows="10" placeholder="Your message *" id="" minlength="5" required></textarea>
                 </div>
             </div>
 
             <button type="submit">Send Message</button>
         </form>
     </footer>
-</body>
 
+</body>
 
 </html>

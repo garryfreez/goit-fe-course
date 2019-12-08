@@ -5,81 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Golden</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
     <header>
-        <div class="logo">
-            <a href="#"><img src="images/icons/Logo-Treehouse.png" alt="logo"></a>
+        <div class="header-row">
+            <div class="account-buttons">
+                <button class="login">Log in</button>
+                <button class="signup">Sign up</button>
+            </div>
+
+            <span>URLAUBSGLÜCK</span>
         </div>
 
-        <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Services</a>
-            </li>
-            <li>
-                <a href="#">Portfolio</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
+        <div class="header-title">
+            <h2>Share your holiday dreams</h2>
+            <p>And find the perfect partner to fullfill it</p>
+        </div>
+
+        <div class="find-partner">
+            <button>Find your holiday partner</button>
+        </div>
     </header>
 
     <main>
-        <section class="services">
-            <h2 class="services-title">Services</h2>
-            <p class="services-description">Proin iaculis purus consequat sem cure.</p>
+        <section class="partners">
+            <h2>Meet a partner for your best holiday</h2>
+            <ul class="partners-list">
+                <li class="partners-item">
+                    <div><img src="images/partners/partner1.png" alt=""></div>
+                    <p class="partner-name">Bradley Hunter</p>
+                    <p class="partner-bio">Based in Chicago. I love playing tennis and loud music.</p>
+                </li>
 
-            <div class="services-items">
-                <div class="services-clause">
-                    <h3>E-Commerce</h3>
-                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-                </div>
-                <div class="services-clause">
-                    <h3>Responsive Web</h3>
-                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-                </div>
-                <div class="services-clause">
-                    <h3>Web Security</h3>
-                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-                </div>
-            </div>
+                <li class="partners-item">
+                    <div><img src="images/partners/partner2.png" alt=""></div>
+                    <p class="partner-name">Lucas Marsha</p>
+                    <p class="partner-bio">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.
+                    </p>
+                </li>
+
+                <li class="partners-item">
+                    <div><img src="images/partners/partner3.png" alt=""></div>
+                    <p class="partner-name">Heather Walker</p>
+                    <p class="partner-bio">I'm a happy person that loves cats and climbing on mountains.
+                    </p>
+                </li>
+
+                <li class="partners-item">
+                    <div><img src="images/partners/partner4.png" alt=""></div>
+                    <p class="partner-name">Bradley Hunter</p>
+                    <p class="partner-bio">Based in Chicago. I love playing tennis and loud music.</p>
+                </li>
+            </ul>
+
+            <button class="other-partners">See other partners</button>
         </section>
     </main>
-
-    <footer>
-
-        <h3 class="footer-title">Contact us</h3>
-        <p class="footer-description">Proin iaculis purus consequat sem cure.</p>
-
-        <form class="contact-us" method="post" action="#">
-
-            <div class="input-text-wrp">
-                <div class="contact-input">
-                    <input type="text" placeholder="your Name *" name="name" minlength="2" required>
-                    <input type="email" placeholder="your e-mail *" name="user-email" required>
-                    <input type="text" placeholder="subject" name="subject" minlength="2">
-                </div>
-
-                <div class="contact-textarea">
-                    <textarea name="body" cols="30" rows="10" placeholder="Your message *" id="" minlength="5" required></textarea>
-                </div>
-            </div>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </footer>
-
 </body>
 
 </html>

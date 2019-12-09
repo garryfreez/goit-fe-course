@@ -65,7 +65,8 @@ header::before {
 }
 
 .login {
-    border: none;
+    border: 2px solid transparent;
+    border-radius: 20px;
     background: transparent;
     color: #fff;
     cursor: pointer;
@@ -75,10 +76,12 @@ header::before {
     text-align: center;
     margin-right: 20px;
     padding: 0;
+    padding: 8px 15px;
+    transition: .4s ease-in-out;
 }
 
 .signup {
-    border: 2px solid #fff;
+    border: 2px solid transparent;
     border-radius: 20px;
     background: transparent;
     color: #fff;
@@ -87,17 +90,24 @@ header::before {
     font-size: 14px;
     font-weight: bold;
     text-align: center;
-    padding: 8px 15px;
     margin: 0;
+    padding: 8px 15px;
+    transition: .4s ease-in-out;
 }
 
-.header-row span {
-    font-family: Montserrat, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
+.login:hover,
+.signup:hover {
+    border: 2px solid #fff;
+}
+
+.header-row a {
+    display: block;
     order: 2;
     margin-bottom: 40px;
+}
+
+.header-row img {
+    display: block;
 }
 
 .header-title h2 {
@@ -123,7 +133,7 @@ header::before {
 }
 
 .find-partner button {
-    border: none;
+    border: 2px solid transparent;
     border-radius: 20px;
     cursor: pointer;
     background: #ff4e50;
@@ -135,6 +145,12 @@ header::before {
     width: 280px;
     height: 40px;
     padding: 0;
+    transition: .2s ease-in;
+}
+
+.find-partner button:hover {
+    border: 2px solid #fff;
+    background: #ff4245;
 }
 
 
@@ -252,6 +268,12 @@ header::before {
     height: 40px;
     padding: 0;
     margin: 0 0 55px 0;
+    transition: .2s ease-in;
+}
+
+.other-partners:hover {
+    background: #ff9496;
+    color: #fff;
 }
 
 
@@ -278,13 +300,13 @@ header::before {
         order: 2;
         margin: 0;
     }
-    .header-row span {
+    .header-row a {
         order: 1;
         margin: 0;
     }
     .header-title h2 {
         font-size: 52px;
-        width: 510px;
+        max-width: 510px;
         margin: 0 0 47px 0;
     }
     .header-title p {
@@ -338,7 +360,7 @@ header::before {
         min-height: 700px;
     }
     .header-row {
-        width: 65%;
+        width: 940px;
     }
     header::before {
         min-height: 700px;
@@ -351,7 +373,7 @@ header::before {
     .partners-list {
         flex-direction: row;
         align-items: flex-start;
-        min-width: 942px;
+        max-width: 942px;
     }
     .partners-item:nth-child(odd) {
         margin-bottom: 0;

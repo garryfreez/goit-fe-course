@@ -1,0 +1,125 @@
+.content {
+    width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 auto 25px;
+    color: $section-title-color;
+}
+
+.section-desc {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 auto;
+    color: $section-desc-color;
+}
+
+
+/* services */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 -7px 0;
+}
+
+.section-desc::after {
+    display: block;
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 42px auto 66px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services__item {
+    display: flex;
+    width: 380px;
+    padding: 0 10px;
+}
+
+.services-list__desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-list__title {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: $section-title-color;
+    margin-bottom: 20px;
+}
+
+.services-list__text {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+    width: 320px;
+    margin: 0 0 100px 0;
+    padding: 0;
+}
+
+.services__icon::before {
+    display: block;
+    width: 32px;
+    content: '';
+    @include background-style($background-position: top, $background-size: contain);
+    margin: 0 auto;
+}
+
+.services__icon--alarm::before {
+    background-image: url(../images/icons/ALARM.png);
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/icons/ALARM@2x.png);
+    }
+}
+
+.services__icon--graph::before {
+    background-image: url(../images/icons/LINE_GRAPH.png);
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/icons/LINE_GRAPH@2x.png);
+    }
+}
+
+.services__icon--computer::before {
+    background-image: url(../images/icons/COMPUTER_OK.png);
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/icons/COMPUTER_OK@2x.png);
+    }
+}
+
+.services__icon--book::before {
+    background-image: url(../images/icons/BOOK.png);
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/icons/BOOK@2x.png);
+    }
+}
+
+.services__icon--home::before {
+    background-image: url(../images/icons/HOME.png);
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/icons/HOME@2x.png);
+    }
+}
+
+.services__icon--square::before {
+    background-image: url(../images/icons/IMAGE.png);
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/icons/IMAGE@2x.png);
+    }
+}

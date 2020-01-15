@@ -1,0 +1,13 @@
+$font-for-title: 'Kaushan Script',
+cursive;
+$font-for-desc: 'Montserrat',
+sans-serif;
+$primary-white-color: #fff;
+$primary-accent-color: #fce38a;
+$section-title-color: #333333;
+$section-desc-color: #333333;
+@mixin background-style($background-position: center, $background-repeat: no-repeat, $background-size: cover) {
+    background-position: $background-position;
+    background-repeat: $background-repeat;
+    background-size: $background-size;
+}

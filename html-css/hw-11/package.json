@@ -9,15 +9,15 @@
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
     },
-    "homepage": "https://luxplanjay.github.io/gulp-starter-kit",
+    "homepage": "https://github.com/garryfreez/goit-fe-course/tree/master/html-css/hw-11",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/luxplanjay/gulp-starter-kit.git"
+        "url": "https://github.com/garryfreez/goit-fe-course/tree/master/html-css/hw-11"
     },
-    "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+    "author": "Garry Freez <skirow96@gmail.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/luxplanjay/gulp-starter-kit/issues"
+        "url": "https://github.com/garryfreez/goit-fe-course/tree/master/html-css/hw-11"
     },
     "devDependencies": {
         "@babel/core": "^7.7.0",

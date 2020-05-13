@@ -1,20 +1,20 @@
-// 'use strict';
+'use strict';
+const findLongestWord = function(string) {
+    let words = string.split(' ');
+    let longestWord = [0];
+    for (const word of words) {
+        if (word.length > longestWord.length) {
+            longestWord = word;
+        }
+    }
+    return longestWord;
+};
 
-const ADMIN_PASSWORD = 'jqueryismyjam';
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+console.log(findLongestWord('The quick brown fox jumped over the lazy dog')); // 'jumped'
 
-let userWrite = prompt('Введите пароль администратора:', ['************']);
+console.log(findLongestWord('Google do a roll')); // 'Google'
 
-let message;
-
-if (userWrite === ADMIN_PASSWORD) {
-    message = 'Добро пожаловать!';
-    alert(message);
-} else if (userWrite === null) {
-    message = 'Отменено пользователем!';
-    alert(message);
-} else if (userWrite != ADMIN_PASSWORD) {
-    message = 'Доступ запрещен, неверный пароль!';
-    alert(message);
-}
-
-// console.log(message);
+console.log(findLongestWord('May the force be with you')); // 'force'

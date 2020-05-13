@@ -1,21 +1,36 @@
 'use strict';
 
-const credits = 23580;
-const pricePerDroid = 3000;
-const userChoise = Number(
-    prompt('Сколько дроидов Вы хотите приобрести?', ['3']),
-);
-const totalPrice = pricePerDroid * userChoise;
-const creditsAfterShopping = credits - totalPrice;
-let message;
+// Вопрос: как показать троеточие внаглую после 40 символов понятно а как сохранить целосность слов ? Допустим есть строка больше 40 символов но цельных слов до 40 символов 4, пятое будет обрезано.Как сделать чтобы обрезало по словам а не по символам(чтобы оставило 4 слова и три точки а пятое снесло так как оно не влазит в 40 символов)?
 
-if (userChoise === 0) {
-    message = 'Отменено пользователем!';
-    console.log(message);
-} else if (totalPrice <= credits) {
-    message = `Вы купили дроидов в количестве ${userChoise} шт, на счету осталось ${creditsAfterShopping} кредитов.`;
-    console.log(message);
-} else {
-    message = 'Недостаточно средств на счету!';
-    console.log(message);
-}
+const formatString = function(string) {
+    const toString = String(string);
+
+    let result;
+
+    if (toString.length > 40) {
+        result = toString.substring(0, 40) + '...';
+    } else {
+        result = toString;
+    }
+
+    return result;
+};
+
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
+// вернется оригинальная строка
+
+console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
+// // вернется форматированная строка
+
+console.log(formatString('Curabitur ligula sapien.'));
+// // вернется оригинальная строка
+
+console.log(
+    formatString(
+        'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
+    ),
+);
+// // вернется форматированная строка

@@ -1,57 +1,57 @@
 'use strict';
 
-const CHINA = 'Китай';
-const CHILE = 'Чили';
-const AUSTRALIA = 'Австралию';
-const INDIA = 'Индию';
-const JAMAICA = 'Ямайку';
+// Вопрос: в инклудс строки можно добавить несколько значений? Через запятую пробовал ('spam','sale') и через or ||, только первый видит.
 
-const chooseChina = 'китай';
-const chooseChile = 'чили';
-const chooseAustralia = 'фвстралия';
-const chooseIndia = 'индия';
-const chooseJamaica = 'ямайка';
+// Этот рабочий вариант мне кажеться слишком длинным
+// const checkForSpam = function(message) {
+//     const stringToLow = message.toLowerCase();
+//     let result;
 
-const costChina = 100;
-const costChile = 250;
-const costAustralia = 170;
-const costIndia = 80;
-const costJamaica = 120;
+//     if (stringToLow.includes('spam')) {
+//         result = true;
+//     } else if (stringToLow.includes('sale')) {
+//         result = true;
+//     } else {
+//         result = false;
+//     }
 
-let message;
+//     return result;
+// };
 
-const userChoose = prompt('В какую страну необходима доставка?', ['Китай']);
-if (userChoose === null) {
-    const messageAlert = 'Необходимо выбрать страну доставки!';
-    alert(messageAlert);
-} else {
-    switch (userChoose.toLowerCase()) {
-        case chooseChina:
-            message = `Доставка в ${CHINA} будет стоить ${costChina} кредитов.`;
-            break;
+// И этот тоже, такое чувство что есть что-то намного проще
+// const checkForSpam = function(message) {
+//     const stringToLow = message.toLowerCase();
+//     let result;
 
-        case chooseChile:
-            message = `Доставка в ${CHILE} будет стоить ${costChile} кредитов.`;
-            break;
+//     if (stringToLow.includes('spam') || stringToLow.includes('sale')) {
+//         result = true;
+//     } else {
+//         result = false;
+//     }
 
-        case chooseAustralia:
-            message = `Доставка в ${AUSTRALIA} будет стоить ${costAustralia} кредитов.`;
-            break;
+//     return result;
+// };
 
-        case chooseIndia:
-            message = `Доставка в ${INDIA} будет стоить ${costIndia} кредитов.`;
-            break;
+const checkForSpam = function(message) {
+    const stringToLow = message.toLowerCase();
+    let result;
 
-        case chooseJamaica:
-            message = `Доставка в ${JAMAICA} будет стоить ${costJamaica} кредитов.`;
-            break;
-
-        default:
-            message = 'В вашу страну доставка не доступна!';
+    if (stringToLow.includes('spam') || stringToLow.includes('sale')) {
+        result = true;
+    } else {
+        result = false;
     }
-}
-if (message === undefined) {
-    location.reload();
-}
 
-console.log(message);
+    return result;
+};
+
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+console.log(checkForSpam('Latest technology news')); // false
+
+console.log(checkForSpam('JavaScript weekly newsletter')); // false
+
+console.log(checkForSpam('Get best sale offers now!')); // true
+
+console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
